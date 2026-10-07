@@ -214,6 +214,8 @@ __pycache__/
 
 ```
 mlflow==2.13.0
+sqlalchemy==2.0.54
+setuptools==70.0.0
 scikit-learn==1.4.2
 pandas==2.2.2
 # DVC remote tren Amazon S3

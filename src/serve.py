@@ -40,8 +40,7 @@ def healthz():
 
     Tra ve: {"status": "ok"}
     """
-    # TODO 5: Tra ve dict {"status": "ok"}
-    pass  # xoa dong nay sau khi hoan thanh
+    return {"status": "ok"}
 
 
 @app.post("/score")
@@ -56,17 +55,15 @@ def score(req: ScoreRequest):
         age, workclass, education_num, marital_status, occupation,
         relationship, sex, capital_gain, capital_loss, hours_per_week
     """
-    # TODO 6: Kiem tra so luong dac trung.
-    # Neu len(req.features) != 10, raise HTTPException(status_code=400, ...)
+    if len(req.features) != 10:
+        raise HTTPException(
+            status_code=400,
+            detail="Expected 10 features for the Adult Income model",
+        )
 
-    # TODO 7: Goi model.predict([req.features]) de lay ket qua du doan.
-    # pred = model.predict(...)
-
-    # TODO 8: Tra ve dict chua "prediction" (int) va "label" (string).
-    # Nhan tuong ung: 0 -> "thu_nhap_thap", 1 -> "thu_nhap_cao"
-    # return {"prediction": ..., "label": ...}
-
-    pass  # xoa dong nay sau khi hoan thanh tat ca TODO ben tren
+    pred = int(model.predict([req.features])[0])
+    label = "thu_nhap_cao" if pred == 1 else "thu_nhap_thap"
+    return {"prediction": pred, "label": label}
 
 
 if __name__ == "__main__":
