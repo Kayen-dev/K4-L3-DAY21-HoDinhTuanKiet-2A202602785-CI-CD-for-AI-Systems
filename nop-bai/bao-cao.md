@@ -27,13 +27,13 @@ HƯỚNG DẪN - đọc rồi XÓA TOÀN BỘ các khối chú thích này sau k
 
 | Lần chạy | n_estimators | learning_rate | max_depth | f1_score | accuracy |
 |---|---|---|---|---|---|
-| 1 | ___ | ___ | ___ | ___ | ___ |
-| 2 | ___ | ___ | ___ | ___ | ___ |
-| 3 | ___ | ___ | ___ | ___ | ___ |
+| 1 | 100 | 0.1 | 3 | 0.7109 | 0.8780 |
+| 2 | 50 | 0.05 | 2 | 0.6051 | 0.8460 |
+| 3 | 200 | 0.1 | 5 | 0.7149 | 0.8740 |
 
-**Bộ siêu tham số đã chọn:** `n_estimators=___`, `learning_rate=___`, `max_depth=___`.
+**Bộ siêu tham số đã chọn:** `n_estimators=200`, `learning_rate=0.1`, `max_depth=5`.
 
-**Lý do:** ___
+**Lý do:** Bộ tham số của lần chạy 3 được chọn vì đạt `f1_score=0.7149`, cao nhất trong ba lần thử và vượt ngưỡng chất lượng 0.65. Lần chạy 1 có accuracy cao nhất là 0.8780 nhưng F1 chỉ đạt 0.7109, thấp hơn lần 3; điều này cho thấy accuracy không nhất thiết phản ánh tốt khả năng nhận diện lớp thu nhập cao trong dữ liệu mất cân bằng. Lần chạy 2 giảm đồng thời learning rate xuống 0.05 và số cây xuống 50 nên mô hình học chưa đủ, khiến F1 giảm còn 0.6051. Kết quả thể hiện quan hệ đánh đổi: learning rate nhỏ thường cần nhiều estimators hơn để bù lại. Việc dùng 200 cây và độ sâu 5 giúp cải thiện F1, dù accuracy giảm nhẹ so với lần 1.
 
 <!--
 Trả lời trong phần Lý do:

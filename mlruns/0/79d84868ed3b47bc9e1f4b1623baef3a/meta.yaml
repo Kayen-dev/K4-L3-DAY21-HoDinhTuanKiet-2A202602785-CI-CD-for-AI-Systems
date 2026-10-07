@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/20K-AI-K4-LAB/K4-L3-DAY21-HoDinhTuanKiet-2A202602785-CI-CD-for-AI-Systems/mlruns/0/79d84868ed3b47bc9e1f4b1623baef3a/artifacts
+end_time: 1791347459901
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 79d84868ed3b47bc9e1f4b1623baef3a
+run_name: able-panda-200
+run_uuid: 79d84868ed3b47bc9e1f4b1623baef3a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791347459861
+status: 3
+tags: []
+user_id: LENOVO

@@ -153,7 +153,7 @@ Nếu thấy `data/train_batch1.csv`, bạn đã commit nhầm file. Thêm file 
 Không có vấn đề. Các cloud provider đều hỗ trợ file có kích thước lớn trong gói miễn phí/trial. Kiểm tra lại xác thực:
 
 ```bash
-export GOOGLE_APPLICATION_CREDENTIALS=sa-key.json
+aws sts get-caller-identity
 dvc push
 ```
 

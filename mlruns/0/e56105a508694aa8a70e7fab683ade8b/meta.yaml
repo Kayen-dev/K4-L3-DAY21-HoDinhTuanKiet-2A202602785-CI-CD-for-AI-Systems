@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/20K-AI-K4-LAB/K4-L3-DAY21-HoDinhTuanKiet-2A202602785-CI-CD-for-AI-Systems/mlruns/0/e56105a508694aa8a70e7fab683ade8b/artifacts
+end_time: 1791347401864
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e56105a508694aa8a70e7fab683ade8b
+run_name: blushing-shark-237
+run_uuid: e56105a508694aa8a70e7fab683ade8b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791347401804
+status: 3
+tags: []
+user_id: LENOVO
