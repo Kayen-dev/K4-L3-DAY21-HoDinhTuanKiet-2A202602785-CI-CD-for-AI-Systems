@@ -80,10 +80,10 @@ Cần nêu được:
 
 | | f1_score | accuracy |
 |---|---|---|
-| Bước 2 (chỉ `train_batch1`) | ___ | ___ |
-| Bước 3 (thêm `train_batch2`) | ___ | ___ |
+| Bước 2 (chỉ `train_batch1`) | 0.7149 | 0.8740 |
+| Bước 3 (thêm `train_batch2`) | 0.7354 | 0.8820 |
 
-**Nhận xét:** ___
+**Nhận xét:** Khi bổ sung `train_batch2`, F1-score tăng từ 0.7149 lên 0.7354 và accuracy tăng từ 0.8740 lên 0.8820. Hai tập dữ liệu cùng nguồn và cùng phân phối nên mức cải thiện không quá lớn; kết quả này xác nhận luồng nạp dữ liệu, huấn luyện lại và triển khai có thể chạy lặp lại an toàn.
 
 <!--
 Một câu trả lời trung thực kiểu "f1 giảm 0,01 vì dữ liệu mới cùng phân phối, không mang
