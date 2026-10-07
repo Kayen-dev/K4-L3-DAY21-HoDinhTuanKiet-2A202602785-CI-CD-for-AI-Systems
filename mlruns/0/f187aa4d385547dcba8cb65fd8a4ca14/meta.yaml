@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/20K-AI-K4-LAB/K4-L3-DAY21-HoDinhTuanKiet-2A202602785-CI-CD-for-AI-Systems/mlruns/0/f187aa4d385547dcba8cb65fd8a4ca14/artifacts
+end_time: 1791392191342
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f187aa4d385547dcba8cb65fd8a4ca14
+run_name: skillful-worm-531
+run_uuid: f187aa4d385547dcba8cb65fd8a4ca14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1791392173127
+status: 3
+tags: []
+user_id: LENOVO
