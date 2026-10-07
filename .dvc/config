@@ -1,0 +1,5 @@
+[core]
+    remote = labstore
+['remote "labstore"']
+    url = s3://ai-lab-cicd/dvc
+    region = ap-southeast-1
